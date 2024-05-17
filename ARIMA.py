@@ -22,7 +22,7 @@ test_price = test['price']
  
 # Fit the ARIMA model (p,d,q) parameters need to be optimized for your specific case
 # Here, we'll just use (1,1,1) as a placeholder
-model = ARIMA(train_price, order=(2, 2, 2))
+model = ARIMA(train_price, order=(1, 2, 1))
 model_fit = model.fit()
  
 # Forecast
